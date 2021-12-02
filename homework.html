@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		h1, em  { font-style: bold;
+			      font-size: larger;
+			      color: aqua; 
+		          text-decoration: overline;
+		       }
+		h2, em { color: blue;
+			     text-decoration: underline;}
+		h3  { color: dimgray;
+			  font-family: Britannic, elephant, cursive;
+			}
+		#ID1 { font-weight: lighter; 
+				  color: limegreen;
+			      border: groove;
+				}
+		.Class1 { font-style: inherit;
+					 background-color: silver; }
+		#bg1 { background-color: peachpuff; 
+			   color: navy;}
+		#bg2 { background-color: black;
+		   	   color: ghostwhite; }
+		#bg3 { background-color: skyblue; }
+		#bg4 { background-color: lightskyblue; }
+		#bg5 { background-color: deepskyblue; }
+		#bg6 { background-color: lightcyan; 
+		       font-size: large;}
+		.ex span { font-style: italic;
+				   color: rebeccapurple; 
+				   background-color: transparent;}
+		span { color: lightyellow;
+			   font-size: 14pt; }
+	</style>
+	<title>Week8_Homework</title>
+</head>
+<body>
+	<table style="border:3px #cccccc solid;" cellpadding="10" border='1'>
+		<form>
+			<tr>
+				<th colspan="3"><h1><em>About--110306018</em></h1></th>
+			</tr>
+			<tr>
+				<td rowspan="3">
+					<figure>
+						<img src="picture.jpg" alt="this is my photo">
+						<figcaption align="middle"><h3>personal photo</h3></figcaption>
+					</figure>
+				</td>
+				<td colspan="2" id="bg4">
+					<label><span>Name:</span>
+						<input type="text" name="name" size="10" maxlength="20"><br>
+					</label>
+					<label>Gender:
+						<input type="radio" name="gender" value="male">Male
+						<input type="radio" name="gender" value="female">Female
+						<input type="radio" name="gender" value="other">Other<br>
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td id="bg3">
+					<label>Country:
+						<select name="city">
+							<option value="Taipei" selected>Taipei</option>
+							<option value="Tainan">Tainan</option>
+							<option value="Taichung">Taichung</option>
+							<option value="Taoyuan">Taoyuan</option>
+						</select>
+					</label><br>
+				</td>
+				<td id="bg5">
+					<label>Birthday:
+						<input type="date" name="birthday" value="day">
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" id="bg6">
+					<label>E-mail:
+						<input type="mail" name="email" size="20" maxlength="30">
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td id="ID1">Hobby</td>
+				<td colspan="2" class="ex"><span>
+					<input type="checkbox" name="hobby" value="Swimming">Swimming
+					<input type="checkbox" name="hobby" value="Volleyball">Volleyball
+					<input type="checkbox" name="hobby" value="Movie">Movie
+					<input type="checkbox" name="hobby" value="Game">Game
+					<input type="checkbox" name="hobby" value="Sleep">Sleep
+				</span>
+				</td>
+			</tr>
+			<tr>
+				<td class="Class1" >Skill</td>
+				<td colspan="2" id="bg1">
+					<input type="checkbox" name="skill" value="java" >Java
+					<input type="checkbox" name="skill" value="html">HTML
+					<input type="checkbox" name="skill" value="python">Python
+					<input type="checkbox" name="skill" value="microsoft">Microsoft Office
+					<input type="checkbox" name="skill" value="premiere">Premiere
+				</td>
+			</tr>
+			<tr>
+				<td><h2><em>Say Something</em></h2></td>
+				<td colspan="2">
+					<textarea rows="4" cols="50" placeholder="Say something here." id="bg2"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<input type="submit" name="Submit">
+					<input type="reset" name="Reset">
+				</td>
+			</tr>
+		</form>
+	</table>
+</body>
+</html>
